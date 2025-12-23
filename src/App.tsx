@@ -4,7 +4,7 @@ export default function App() {
   return (
     <div className="container">
       <h1 className="title">
-        AIChE <span>VIT</span>
+        <span>AIChE VIT</span>
       </h1>
 
       <p className="subtitle">
