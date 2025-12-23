@@ -9,5 +9,5 @@ export default defineConfig({
 '.trycloudflare.com','.netlify.app','localhost'
     ]
   },
-  base: '/'
+  base: './'
 })
