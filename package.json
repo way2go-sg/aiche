@@ -1,5 +1,5 @@
 {
-  "homepage": "./",
+  "homepage": "https://storied-hotteok-acf2a0.netlify.app/",
   "name": "aiche-launch",
   "private": true,
   "version": "0.0.0",
@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "serve": "^14.2.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
