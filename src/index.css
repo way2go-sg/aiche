@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.heading-text {
+  font-family: "Playfair Display", serif;
+}
+
+.options-text {
+  font-family: "Courier Prime", monospace;
+}
+
+
+/* Allow scrolling inside elements with the scrollable class */
+.scrollable {
+  overflow-y: scroll; /* Allow scrolling inside elements */
+  -ms-overflow-style: none; /* For Internet Explorer */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+
