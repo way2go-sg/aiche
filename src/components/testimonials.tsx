@@ -51,7 +51,7 @@ const testimonials = [
   {
     id: 6,
     name: "Rishab Lanka",
-    role: "Ex Senior Core Comittee",
+    role: "Ex Senior Core Committee",
     text: "I vividly remember my introduction to AIChE by my seniors. Ever since then it’s been a nonstop adventure. Traversing through competitions, events and deadlines, I found myself embracing this team and wanted to scale new heights together. The late night shenanigans in the lab, pre-event jitters or the seeing models work on principles you’ve only theorized about, this chapter has given me a space to express myself, understand and grow into a better version of myself.",
     image: img6
   },
