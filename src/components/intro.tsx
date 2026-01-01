@@ -6,7 +6,7 @@ const IntroOverlay: React.FC = () => {
 
   useEffect(() => {
     // 1. Reduced total visible duration to 1 second
-    const timer = setTimeout(() => setIsVisible(false), 1000);
+    const timer = setTimeout(() => setIsVisible(false), 2000);
     return () => clearTimeout(timer);
   }, []);
 
