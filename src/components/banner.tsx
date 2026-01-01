@@ -4,18 +4,17 @@ import AnimatedList from './scrollHandler';
 
 // --- Data: The Items List ---
 const defaultItems = [
-  'Proudly received the Outstanding Student Chapter Award an awe-inspiring total of 9 times.',
-  'Successfully organized the India Student Regional Conference (SRC) twice in 2018 and 2022.',
-  'Won the Chem-E-Car competition in SRC 2018 and represented India in the ASC 2018.',
-  'Won the K-2 category prize at the K-12 SRC in 2023 and 2024.',
-  'Won the Grades 3–5 category at the K-12 SRC in 2023 and 2024.',
-  'Qualified in the K-12 ASC in 2023 (K–2, 3–5) and 2024 (K–2, 3–5, 9–12 categories).',
-  'Won 3rd place in the Chem-E-Car competition at SRC 2024 held at NIT Rourkela.',
-  "Won 1st place in the Azeotropor (Chem-E-Car) at Azeotropy'25, IIT Bombay.",
-  'Proudly hosted the AIChE India SRC 2018 at VIT Vellore, a qualifier for the ASC.',
-  'Represented with ingenuity at the Annual Chem-E-Car Competition 2017 in Minneapolis.'
+  'Represented the chapter with ingenuity at the Annual Chem-E-Car Competition 2017 in Minneapolis.',
+  'Hosted the AIChE India SRC 2018 at VIT Vellore and won the Chem-E-Car competition to represent India at ASC.',
+  'Organized the India Student Regional Conference (SRC) for the second time in 2022.',
+  'Swept the K–2 and Grades 3–5 categories at the K-12 SRC 2023 and qualified for the K-12 ASC.',
+  'Repeated victories in K–2 and 3–5 at K-12 SRC 2024 and qualified in three categories for the ASC.',
+  'Secured 3rd place in the Chem-E-Car competition at SRC 2024 held at NIT Rourkela.',
+  "Dominated Azeotropy’25 with 1st place in Azeorover at IIT Bombay.",
+  'Claimed Runners-up at SRC 2025 Chem-E-Car and ranked in the top 20 at ASC.',
+  'Crushed K-12 competitions in 2025: Winners in Grades 3–5 & 9–12, and top finishes in K–2 & 6–8.',
+  'Honored as an Outstanding Student Chapter for the 10th time, marking a decade of excellence.'
 ];
-
 // --- Types ---
 interface BannerProps {
   image1: string;
