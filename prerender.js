@@ -7,52 +7,57 @@ import { preview } from 'vite';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
 
-// LIST YOUR ROUTES HERE
 const routesToPrerender = ['/', '/menu', '/events', '/insider', '/board'];
 
 (async () => {
   console.log('⚡ Prerendering started...');
   
-  // 1. Build the app first (ensures dist exists)
-  // We assume 'npm run build' runs 'vite build' before this script starts.
+  let server;
+  let browser;
 
-  // 2. Start the Preview Server
-  const server = await preview({
-    preview: { port: 1337 },
-    root: toAbsolute('dist'),
-    configFile: false,
-  });
+  try {
+    // 1. Start the Preview Server
+    server = await preview({
+      preview: { port: 1337 },
+      root: toAbsolute('dist'),
+      configFile: false,
+    });
 
-  const browser = await puppeteer.launch();
+    // 2. Try to launch browser (Will work locally, might fail on Vercel)
+    browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox'], // Helps in some CI environments
+    });
 
-  for (const route of routesToPrerender) {
-    const page = await browser.newPage();
+  } catch (e) {
+    console.warn('\n⚠️  WARNING: Could not launch browser for pre-rendering.');
+    console.warn('   This is expected on Vercel/Netlify free tier builds.');
+    console.warn('   Your site will still work, but "social media preview cards" might default to index.html.');
+    console.warn('   Google SEO will still work fine (Google runs JS).\n');
     
-    // 3. Visit the route
-    try {
-      await page.goto(`http://localhost:1337${route}`, {
-        waitUntil: 'networkidle0', // Waits for animations/images to settle
-      });
+    // Close server if it started
+    if (server) server.httpServer.close();
+    
+    // EXIT SUCCESSFULLY so the build doesn't fail
+    process.exit(0);
+  }
 
-      // 4. Capture the HTML
-      const html = await page.content();
-
-      // 5. Save to dist/route/index.html
-      // Handle the root route '/' specifically
-      const filePath = route === '/' 
-        ? 'dist/index.html' 
-        : `dist${route}/index.html`;
-
-      const dir = path.dirname(toAbsolute(filePath));
-      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-
-      fs.writeFileSync(toAbsolute(filePath), html);
-      console.log(`✅ Generated: ${filePath}`);
-    } catch (e) {
-      console.error(`❌ Failed to render ${route}:`, e);
+  // ... (The rest of your loop code remains the same) ...
+  try {
+    for (const route of routesToPrerender) {
+        const page = await browser.newPage();
+        await page.goto(`http://localhost:1337${route}`, { waitUntil: 'networkidle0' });
+        
+        const html = await page.content();
+        const filePath = route === '/' ? 'dist/index.html' : `dist${route}/index.html`;
+        const dir = path.dirname(toAbsolute(filePath));
+        
+        if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+        fs.writeFileSync(toAbsolute(filePath), html);
+        console.log(`✅ Generated: ${filePath}`);
+        await page.close();
     }
-    
-    await page.close();
+  } catch (e) {
+      console.error('Error during page rendering:', e);
   }
 
   await browser.close();
