@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { motion, Variants, useScroll, useMotionValueEvent, useMotionValue, useMotionTemplate } from 'framer-motion'; 
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/header.png';
-import image from '../assets/core.jpg';
-import sidebar from '../assets/sidebarmenu.png'; 
+import logo from '../assets/header.webp';
+import image from '../assets/core.webp';
+import sidebar from '../assets/sidebarmenu.webp'; 
 
 const Header = () => {
     // --- Scroll Logic ---

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import image from '../assets/black.jpeg';
-import image2 from '../assets/black.jpeg';
-import image3 from '../assets/black.jpeg';
+import image from '../assets/black.webp';
+import image2 from '../assets/black.webp';
+import image3 from '../assets/black.webp';
 
 // Data structure for cleaner code
 const sectors = [

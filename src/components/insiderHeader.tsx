@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import logo from '../assets/header.png';
-import sidebar from '../assets/sidebarmenu.png';
-import img from '../assets/junior.jpg';
+import logo from '../assets/header.webp';
+import sidebar from '../assets/sidebarmenu.webp';
+import img from '../assets/junior.webp';
 import { motion, Variants, useScroll, useMotionValueEvent } from 'framer-motion';
 
 interface EventHeaderProps {

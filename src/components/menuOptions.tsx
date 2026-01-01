@@ -1,4 +1,4 @@
-import exit from '../assets/exit menu.png'
+import exit from '../assets/exit menu.webp'
 import { motion } from 'framer-motion';
 
 const MenuOptions = () => {

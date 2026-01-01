@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Quote, ChevronDown, ChevronUp } from 'lucide-react';
 
 // Importing assets (Ensure these paths are correct in your project)
-import img1 from '../assets/testimonials/sanatan.jpeg';
-import img2 from '../assets/testimonials/aarya.jpeg';
-import img3 from '../assets/testimonials/smrti.jpeg';
-import img4 from '../assets/testimonials/harsha.jpeg';
-import img5 from '../assets/testimonials/kanishk.jpeg';
-import img7 from '../assets/testimonials/jefin.jpeg';
-import img8 from '../assets/testimonials/shardul.jpeg';
-import img9 from '../assets/testimonials/gautham.jpeg';
-import img6 from '../assets/testimonials/rishab.jpeg';
+import img1 from '../assets/testimonials/sanatan.webp';
+import img2 from '../assets/testimonials/aarya.webp';
+import img3 from '../assets/testimonials/smrti.webp';
+import img4 from '../assets/testimonials/harsha.webp';
+import img5 from '../assets/testimonials/kanishk.webp';
+import img7 from '../assets/testimonials/jefin.webp';
+import img8 from '../assets/testimonials/shardul.webp';
+import img9 from '../assets/testimonials/gautham.webp';
+import img6 from '../assets/testimonials/rishab.webp';
 
 const testimonials = [
   {

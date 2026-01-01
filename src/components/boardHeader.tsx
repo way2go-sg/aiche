@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import sidebar from '../assets/sidebarmenu.png';
-import logo from '../assets/header.png';
+import sidebar from '../assets/sidebarmenu.webp';
+import logo from '../assets/header.webp';
 //import classNames from 'classnames';
 interface CommunityHeaderProps {
     details: string;

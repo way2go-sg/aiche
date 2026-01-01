@@ -3,13 +3,13 @@ import { motion, useMotionValue, useTransform, useAnimation, PanInfo, AnimatePre
 import { RotateCcw, Layers } from 'lucide-react';
 
 // --- Import your images here ---
-import img1 from '../assets/spotlight/alumni.jpg';
-import img2 from '../assets/spotlight/che.jpg';
-import img3 from '../assets/spotlight/det.jpg';
-import img4 from '../assets/spotlight/pod.jpg';
-import img5 from '../assets/spotlight/sus.jpg';
-import img6 from '../assets/spotlight/pod1.jpg';
-import img7 from '../assets/spotlight/pod2.jpg';
+import img1 from '../assets/spotlight/alumni.webp';
+import img2 from '../assets/spotlight/che.webp';
+import img3 from '../assets/spotlight/det.webp';
+import img4 from '../assets/spotlight/pod.webp';
+import img5 from '../assets/spotlight/sus.webp';
+import img6 from '../assets/spotlight/pod1.webp';
+import img7 from '../assets/spotlight/pod2.webp';
 
 const POSTERS = [
   { id: 0, src: img7, color: "from-red-600" },

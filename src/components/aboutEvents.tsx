@@ -1,6 +1,6 @@
 //import React from 'react';
 import { motion } from 'framer-motion';
-import img from '../assets/insider.jpeg'; 
+import img from '../assets/insider.webp'; 
 
 // 1. Update Interface to include an optional 'link'
 interface ContentItem {

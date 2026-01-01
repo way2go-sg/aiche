@@ -7,11 +7,11 @@ import { Analytics } from '@vercel/analytics/react';
 import About from './pages/About';
 import Community from './pages/Community';
 import Food from './pages/Events';
-import Retail from './pages/Insider';
+import Insiderpage from './pages/Insider';
 import Menu from './pages/Menu';
 import AicheGallery from './components/gallery';
 // Import Assets
-import logo from './assets/logo.png';
+import logo from './assets/logo.webp';
 
 // --- Configuration ---
 // This array controls your entire navigation structure.
@@ -39,7 +39,7 @@ const NAV_ITEMS = [
     id: 'insider',
     path: '/insider',
     label: 'Insider',
-    component: <Retail />,
+    component: <Insiderpage />,
     bgColor: '#7a1410',
     activeColor: '#7a1410',
     delay: 0.3,
