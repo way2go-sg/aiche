@@ -6,7 +6,7 @@ const items = [
   'Swept the K–2 and Grades 3–5 categories at the K-12 SRC 2023 and qualified for the K-12 ASC.',
   'Repeated victories in K–2 and 3–5 at K-12 SRC 2024 and qualified in three categories for the ASC.',
   'Secured 3rd place in the Chem-E-Car competition at SRC 2024 held at NIT Rourkela.',
-  "Dominated Azeotropy’25 with 1st place in Chem-E-Car at IIT Bombay.",
+  "Dominated Azeotropy’25 with 1st place in Azeorover at IIT Bombay.",
   'Claimed Runners-up at SRC 2025 Chem-E-Car and ranked in the top 20 at ASC.',
   'Crushed K-12 competitions in 2025: Winners in Grades 3–5 & 9–12, and top finishes in K–2 & 6–8.',
   'Honored as an Outstanding Student Chapter for the 10th time, marking a decade of excellence.'
