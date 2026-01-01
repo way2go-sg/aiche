@@ -10,8 +10,8 @@ function About() {
     useSEO({
         title: "About Us - AIChE VIT",
         description: "Discover the legacy of AIChE VIT. We are a premier student chapter dedicated to fostering innovation and leadership in Chemical Engineering.",
-        url: "https://www.sesivit.in/",
-        image: "https://www.sesivit.in/assets/og-about-image.jpg"
+        url: "https://www.aichevit.in/",
+        image: "https://www.aichevit.in/assets/logo-bjSTSeLV.png"
     });
 
     return (
