@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     id: 8,
-    name: "Harshavardhan",
+    name: "Harsha",
     role: "Ex Senior Core Committee",
     text: "Two years ago, I joined ChemE Cube thinking it would just be another technical project. Spoiler alert: it turned out to be a full-blown adventure. From endless design discussions to ambitious experiments. In the middle of all the chaos, I surprised myself. I learned to open up, let go of fear, and actually express my thoughts. More importantly, through this journey I met an incredible bunch of people who became more than teammates; they became friends, and honestly, a second family.",
     image: img4
