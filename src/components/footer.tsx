@@ -25,7 +25,7 @@ const Footer = () => {
       id: 'linkedin',
       icon: <SlSocialLinkedin className="text-3xl md:text-4xl" />,
       label: "LinkedIn",
-      action: () => openUrl("https://www.linkedin.com/in/aiche-vit-student-chapter/"),
+      action: () => openUrl("https://www.linkedin.com/company/aiche-vit/"),
     },
     {
       id: 'instagram',

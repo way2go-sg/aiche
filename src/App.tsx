@@ -2,20 +2,14 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
-
-// Import Pages
 import About from './pages/About';
 import Community from './pages/Community';
 import Food from './pages/Events';
 import Insiderpage from './pages/Insider';
 import Menu from './pages/Menu';
 import AicheGallery from './components/gallery';
-// Import Assets
 import logo from './assets/logo.webp';
 
-// --- Configuration ---
-// This array controls your entire navigation structure.
-// Add a new item here, and it automatically appears in Mobile and Desktop views.
 const NAV_ITEMS = [
   {
     id: 'home',
@@ -23,7 +17,7 @@ const NAV_ITEMS = [
     label: 'Home',
     component: <About />,
     bgColor: '#d4b483',
-    activeColor: '#d4b483', // Home stays same color
+    activeColor: '#d4b483',
     hasLogo: true, 
   },
   {
